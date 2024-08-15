@@ -9,13 +9,13 @@ The primary objective of this project is to develop a machine learning model cap
 Dataset:
 The dataset used in this project includes various features related to credit card transactions. These features are engineered to capture the patterns and characteristics of both fraudulent and legitimate transactions. Some of the key features include:
 
-distance_from_home
-ratio_to_median_purchase_price
-online_order
-used_chip
-used_pin_number
-repeat_retailer
-distance_from_last_transaction
+->distance_from_home
+->ratio_to_median_purchase_price
+->online_order
+->used_chip
+->used_pin_number
+->repeat_retailer
+->distance_from_last_transaction
 
 Problem Statement:
 The challenge is to build a model that can effectively distinguish between fraudulent and non-fraudulent transactions, minimizing false positives and false negatives.
@@ -27,16 +27,17 @@ During the EDA phase, various statistical methods and visualizations were used t
 
 This included:
 
-Distribution of Transactions: Visualizing the distribution of fraudulent vs. non-fraudulent transactions.
-Correlation Analysis: Evaluating the correlation between different features to identify any multicollinearity.
-Feature Analysis: Assessing the impact of each feature on the target variable (fraud vs. non-fraud).
+->Distribution of Transactions: Visualizing the distribution of fraudulent vs. non-fraudulent transactions.
+->Correlation Analysis: Evaluating the correlation between different features to identify any multicollinearity.
+->Feature Analysis: Assessing the impact of each feature on the target variable (fraud vs. non-fraud).
 Data Preprocessing
 Key preprocessing steps included:
 
-Handling Missing Values: Imputing or removing missing data points.
-Feature Engineering: Creating new features or modifying existing ones to better capture transaction patterns.
-Data Normalization: Scaling features to ensure they are on the same scale, which is important for certain machine learning models.
-Train-Test Split: Splitting the dataset into training and testing sets, typically in a 70:30 ratio.
+->Handling Missing Values: Imputing or removing missing data points.
+->Feature Engineering: Creating new features or modifying existing ones to better capture transaction patterns.
+->Data Normalization: Scaling features to ensure they are on the same scale, which is important for certain machine learning models.
+->Train-Test Split: Splitting the dataset into training and testing sets, typically in a 70:30 ratio.
+
 3. Modeling
 
 Model Selection:
@@ -77,16 +78,19 @@ Model Persistence
 The trained model was saved using the joblib library, allowing it to be loaded and used for predictions in the future.
 
 5. Conclusion
+
 Summary
 The Random Forest model demonstrated exceptional performance in detecting fraudulent transactions, achieving near-perfect accuracy. The most significant feature influencing the model's decision was the ratio_to_median_purchase_price, indicating that the amount spent relative to the median purchase price is a strong indicator of fraud.
 
 Future Work
 To further improve the model, the following steps could be taken:
 
-Handling Imbalanced Data: Applying techniques like SMOTE to balance the dataset.
-Model Ensemble: Using an ensemble of different models to improve prediction accuracy.
-Real-time Detection: Implementing the model in a real-time fraud detection system.
+->Handling Imbalanced Data: Applying techniques like SMOTE to balance the dataset.
+->Model Ensemble: Using an ensemble of different models to improve prediction accuracy.
+->Real-time Detection: Implementing the model in a real-time fraud detection system.
+
 6. Appendices
+
 Code Snippets
 Key code snippets from the project:
 
