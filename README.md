@@ -96,6 +96,3 @@ y_pred = model.predict(X_test)
 print("Confusion Matrix:")
 print(confusion_matrix(y_test, y_pred))
 ```
-
-### Additional Visualizations
-Additional plots and visualizations can be included to provide more context on the data distribution, model performance, and feature importance.
