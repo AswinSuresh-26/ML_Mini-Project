@@ -1,4 +1,3 @@
-
 # Credit Card Fraud Detection: Detailed Report
 
 ## 1. Overview
